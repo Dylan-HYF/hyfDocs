@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  height: 100%;
+}
+body {
+  background: #F2F3F4;
+  height: 100%;
+  /* margin: 0; */
+}
+
+main {
+  display: block;
+  padding-top: 30px;
+}
+header {
+  display: flex;
+  padding: 0 50px;
+  flex-wrap: wrap;
+  /* padding: 10px auto; */
+  /* width: 100%; */
+}
+header article {
+  height: 263px;
+  width: 208px;
+  background: #fff;
+  margin: 0 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow:0px 6px 5px rgba(0, 0, 0,.2);  
+  margin-bottom: 20px;
+}
+header article p {
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+header article h1 {
+  padding-top: 10px;
+  border-top: 1px solid rgb(185, 185, 185);
+  position: relative;
+}
+header article h1 span {
+  display: block;
+  /* height: 36px; */
+  width: 60%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+header article h1 button {
+  font-size: 14px;
+  /* vertical-align: text-top; */
+  position: absolute;
+  right: 0;
+  top: 17px;
+  border: none;
+  border-radius: 5px;
+  background: #EA4335;
+  color: #fff;
+  cursor: pointer;
+}
+header article h1 button:hover {
+  background: #e6695e;
+}
+header article h1 button:active {
+  background: #EA4335;
+
+}
+article:first-child {
+  text-align: center;
+  line-height: 240px;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    padding-top: 10px;
+  }
+  header {
+    padding: 0;
+    padding-right: 10px;
+    flex-wrap: wrap;
+  }
+  header article {
+    margin: 0 10px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    height: 208px;
+    width: 172px;
+  }
+  article:first-child {
+    line-height: 180px;
+  }
+  header article p {
+  -webkit-line-clamp: 5;
+
+  }
+}
