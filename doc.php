@@ -45,7 +45,7 @@ WHERE `docId` = $docId");
       </script>
       <input type="text" placeholder="untitled" tabindex="2" value="<?= $row["title"] ?>">
       <div>
-        <span style="display: none;">
+        <span style="opacity:0">
           <i class="material-icons">
             done
           </i>
@@ -67,7 +67,7 @@ WHERE `docId` = $docId");
   <input type="text" placeholder="untitled" tabindex="2">
   <!-- <button>edit</button> -->
   <div>
-    <span style="display: none;">
+    <span style="opacity:0">
       <i class="material-icons">
         done
       </i>

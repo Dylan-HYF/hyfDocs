@@ -1,3 +1,9 @@
+window.addEventListener('pageshow', function (e) {
+  if (e.persisted) {
+    window.location.reload();
+  }
+});
+
 const add = document.querySelector('article:first-child')
 // console.log(add)
 add.addEventListener('click', () => {

@@ -36,13 +36,13 @@ function send(title, content, id = undefined) {
           docId = response.docId;
         }
         document.title = title ? title : 'untitled'
-        saved.style.display = 'inline'
+        saved.style.opacity = '1'
         // let hideSaved
         // if (hideSaved) {
         //   clearTimeout(hideSaved)
         // }
         setTimeout(() => {
-          saved.style.display = 'none'
+          saved.style.opacity = '0'
         }, 2000)
         // test sheridan server
         history.replaceState({ docId }, '', `doc.php?docId=${docId}`)
