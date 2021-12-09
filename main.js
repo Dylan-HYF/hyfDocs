@@ -18,7 +18,8 @@ xhr.onreadystatechange = function (e) {
   if (xhr.readyState === 4) {
     console.log(xhr.responseText);// modify or populate html elements based on response.
     //DOM Manipulation
-    const res = JSON.parse(xhr.responseText)
+    const result = JSON.parse(xhr.responseText)
+    const res = result.reverse()
     res.forEach((x) => {
       // console.log(x.title)
       const art = document.createElement('article')
