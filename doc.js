@@ -44,6 +44,7 @@ function send(title, content, id = undefined) {
         setTimeout(() => {
           saved.style.display = 'none'
         }, 2000)
+        // test sheridan server
         history.replaceState({ docId }, '', `doc.php?docId=${docId}`)
         if (!document.querySelector('section button')) {
           const section = document.querySelector('section')
