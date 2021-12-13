@@ -13,6 +13,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="manifest" href="favicon_io/site.webmanifest">
+  <meta name="description" content="An app which helps you share docs with others">
+  <meta name="keywords" content="sharing doc">
   <!-- Twitter Card data -->
   <meta name="twitter:card" value="summary">
 
