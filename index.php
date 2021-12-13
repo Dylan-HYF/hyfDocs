@@ -13,6 +13,15 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="manifest" href="favicon_io/site.webmanifest">
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" value="summary">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="hyfDocs" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://huangyou.dev.fast.sheridanc.on.ca/hyfDocs/" />
+  <meta property="og:image" content="http://huangyou.dev.fast.sheridanc.on.ca/hyfDocs/favicon_io/android-chrome-512x512.png" />
+  <meta property="og:description" content="A doc app" />
 </head>
 
 <body>
